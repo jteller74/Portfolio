@@ -24,7 +24,7 @@ class Preview extends Component { //needs title, subtitle, text, and a link to g
                         }
                         
                         { this.props.gitLink != null &&
-                            <Button href={this.props.link}><FontAwesomeIcon icon={faGithub}/> Github</Button>
+                            <Button href={this.props.gitLink}><FontAwesomeIcon icon={faGithub}/> Github</Button>
                         }
                     </ButtonGroup>
   
