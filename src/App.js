@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Navbar from './components/Navbar';
 import { Container, Row, Col } from 'reactstrap';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import Projects from './Projects';
+import About from './About';
 import './App.css';
 
 
@@ -12,9 +13,25 @@ class App extends Component {
 
 		return (
 			<Router>
-				<div>
+				<div style={{backgroundColor: "rgb(46,49,65)"}}>
 					<Navbar />
-					<Route path="/projects" component={Projects} />
+
+					<Switch>
+
+						<Route exact path="/">
+							<About />
+							<Projects />
+						</Route>
+
+						<Route path="/about">
+							<About />
+						</Route>
+
+						<Route path="/projects">
+							<Projects />
+						</Route>
+					</Switch>
+
 
 				</div>
 		</Router>

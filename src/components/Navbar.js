@@ -24,7 +24,7 @@ const NavHeader = (props) => {
     return (
             <div>
                 <Navbar color="dark" dark expand="md">
-                    <NavbarBrand href="/">Jared Teller</NavbarBrand>
+                    <NavbarBrand tag={Link} to="/">Jared Teller</NavbarBrand>
                     <NavbarToggler onClick={toggle} />
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="mr-auto" navbar>
@@ -35,7 +35,7 @@ const NavHeader = (props) => {
                                 <NavLink href="/contact/">Contact</NavLink>
                             </NavItem>
                         </Nav>
-                        <NavbarText>Built with React</NavbarText>
+                        <NavLink href="https://reactjs.org/">Created with React</NavLink>
                     </Collapse>
                 </Navbar>
             </div>
