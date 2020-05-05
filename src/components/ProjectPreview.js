@@ -16,8 +16,11 @@ class Preview extends Component { //needs title, subtitle, text, and a link to g
                     <CardSubtitle>{this.props.subtitle}</CardSubtitle>
                     <CardText>{this.props.text}</CardText>
                     
-                    <Button style={{marginRight: '5px'}} href={this.props.link}>Learn More</Button>
-                    <Button href={this.props.link}>View on Github</Button>
+                    <ButtonGroup>
+                        <Button style={{marginRight: '5px'}} href={this.props.link}>Learn More</Button>
+                        <Button href={this.props.link}>View on Github</Button>
+                    </ButtonGroup>
+                   
                   
                     
                 </CardBody>

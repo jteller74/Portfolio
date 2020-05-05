@@ -14,7 +14,8 @@ class Project extends Component {
     render() {
         return ( //the container is a bootstrap container for responsive layouts
             <Container fluid style={{backgroundColor: "rgb(46,49,65)"}}>
-            <h4 style={{color: 'white'}}>Projects</h4>
+            <h5 style={{color: 'white'}}>Projects</h5>
+			<hr></hr>
             <Row>
                 <Col md="4" sm="6">    
                     <Preview title='Custom Shell' text="A custom shell written in C that features Finite State Machine design, Make, lexical analysis (tokenization), file redirection, and Pipes. Built within Windows Subsystem for Linux and Visual Studio Code." imagePath={shellPic}  link="https://github.com/jaredt17/CustomShell_C" />
