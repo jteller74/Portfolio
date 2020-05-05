@@ -3,6 +3,8 @@ import {
     Container, Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button, CardLink, ButtonGroup
 } from 'reactstrap';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faYoutubeSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 class Preview extends Component { //needs title, subtitle, text, and a link to github if available
@@ -17,12 +19,15 @@ class Preview extends Component { //needs title, subtitle, text, and a link to g
                     <CardText>{this.props.text}</CardText>
                     
                     <ButtonGroup>
-                        <Button style={{marginRight: '5px'}} href={this.props.link}>Learn More</Button>
-                        <Button href={this.props.link}>View on Github</Button>
+                        {this.props.link != null &&
+                            <Button style={{marginRight: '5px'}} href={this.props.link}>Learn More</Button>
+                        }
+                        
+                        { this.props.gitLink != null &&
+                            <Button href={this.props.link}><FontAwesomeIcon icon={faGithub}/> Github</Button>
+                        }
                     </ButtonGroup>
-                   
-                  
-                    
+  
                 </CardBody>
             </Card>
         );

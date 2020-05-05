@@ -21,6 +21,11 @@ const NavHeader = (props) => {
 
     const toggle = () => setIsOpen(!isOpen);
 
+    const customLinkStyle = {
+        color: "white",
+        fontSize: ".8em"
+    };
+
     return (
             <div>
                 <Navbar color="dark" dark expand="md">
@@ -32,10 +37,10 @@ const NavHeader = (props) => {
                                 <NavLink tag={Link} to="/projects">Projects</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/contact/">Contact</NavLink>
+                                <NavLink tag={Link} to="/contact">Contact</NavLink>
                             </NavItem>
                         </Nav>
-                        <NavLink href="https://reactjs.org/">Created with React</NavLink>
+                        <NavLink style={customLinkStyle} href="https://reactjs.org/">Created with React</NavLink>
                     </Collapse>
                 </Navbar>
             </div>
