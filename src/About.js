@@ -13,7 +13,7 @@ class About extends Component {
             <Container fluid style={{backgroundColor: 'rgb(56,59,76)', color: 'white'}}>
                 <br></br>
                 <Row>
-                    <Col md="10">
+                    <Col md="8">
                         <h5>About Me</h5>
                         <hr></hr>
                         <p>I have served major companies in various industries as an <strong>I.T. Project Manager</strong> for over 15 years. I also have prior experience in Network Engineering and Operations, and this summer I will complete a B.S. in Business & I.T. Management. I take great pride in my work, and in the trusted relationships I have built with my peers. I have been involved in the community as a youth baseball coach and mentor for over 20 years, and I enjoy playing guitar in my spare time. I reside in Macomb, Michigan with my wife Wendy, and my three boys... Jared, Justin, and Jordan. </p>
@@ -25,6 +25,9 @@ class About extends Component {
                        
                     </Col>
 
+                    <Col md="1">
+                    </Col>
+
                     <Col md="2">
                         <Image src={profilePic} fluid></Image>
                     </Col>    
@@ -32,7 +35,7 @@ class About extends Component {
                 <br></br>
                 <Row>
                     
-                    <Col md="10">
+                    <Col md="8">
                         
                         <h5>Education</h5>
                         <hr></hr>
@@ -43,6 +46,9 @@ class About extends Component {
                         <li>Training in Cisco LAN switching, PIX firewalls, and Sniffer Pro</li>
                     </Col>
                     
+                    <Col md="1">
+                    </Col>
+
                     <Col md="2">
                         <Image src={wguLogo} fluid ></Image>
                     </Col>

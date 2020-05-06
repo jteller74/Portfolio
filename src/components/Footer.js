@@ -26,7 +26,7 @@ const Footer = (props) => {
 
   return (
     <div style={{float: 'right'}} className="fixed-bottom">      
-		    <p style={customTextStyle}>Designed by: &copy;<a style={{color: '#212529'}} href="https://jteller.dev/">Jared Teller</a> All rights reserved.</p>
+		    <p style={customTextStyle}>Designed by: &copy;<a style={{color: '#c5c5c5'}} href="https://jteller.dev/">Jared Teller</a> All rights reserved.</p>
     </div>
   );
 }
