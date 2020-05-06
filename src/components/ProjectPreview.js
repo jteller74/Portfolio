@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
     Container, Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle, Button, CardLink, ButtonGroup
+    CardTitle, CardSubtitle, Button, CardLink, ButtonGroup, CardFooter
 } from 'reactstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faYoutubeSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -15,21 +15,21 @@ class Preview extends Component { //needs title, subtitle, text, and a link to g
                 <CardImg top width="100%" src={this.props.imagePath} alt="No Image" href={this.props.pageLink}/>
                 <CardBody>
                     <CardTitle style={{fontWeight: "bold"}} className="text-center">{this.props.title}</CardTitle>
+                    <CardSubtitle tag="h6" className="text-center">{this.props.subtitle}</CardSubtitle>
                     <hr></hr>
-                    <CardSubtitle>{this.props.subtitle}</CardSubtitle>
                     <CardText>{this.props.text}</CardText>
                     
                     <ButtonGroup>
-                        {this.props.link != null &&
-                            <Button style={{marginRight: '5px'}} tag={Link} to={this.props.link}>Learn More</Button>
-                        }
-                        
+                        <Button style={{marginRight: '5px'}} tag={Link} to={this.props.link}>Learn More</Button>
+                
                         { this.props.gitLink != null &&
                             <Button href={this.props.gitLink}><FontAwesomeIcon icon={faGithub}/> Github</Button>
                         }
                     </ButtonGroup>
-  
                 </CardBody>
+                <CardFooter style={{backgroundColor: 'rgb(52,58,64)'}}>
+                    { this.props.date }
+                </CardFooter>
             </Card>
         );
     }

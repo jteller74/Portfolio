@@ -4,35 +4,37 @@ import {
   Container, Row, Col, Card, Button, CardImg, CardTitle, CardText, CardDeck,
   CardSubtitle, CardBody
 } from 'reactstrap';
-import hashPicture from './images/hashmap.png';
-import shellPic from './images/shellthumbnail.jpg'
-import snackPic from './images/snackproj.png';
-import hisser from './images/hisserproj.png';
-import youtubeImage from './images/youtube.png';
-import portImage from './images/react.jpg';
+import meritor from './images/meritor.jpg';
+import ally from './images/ally.jpg';
+import gm from './images/gm.jpg';
+import ibm from './images/ibm.png';
+import dow from './images/dow.jpg';
+import nl2br from 'react-newline-to-break';
 
 class Project extends Component {
     render() {
         return ( //the container is a bootstrap container for responsive layouts
             <Container fluid style={{backgroundColor: "rgb(46,49,65)"}}>
                 <br></br>
-                <h5 style={{color: 'white'}}>Projects</h5>
+                <h5 style={{color: 'white'}}>Experience</h5>
                 <hr></hr>
                 <Row>
-                    <Col md="4" sm="6">    
-                        <Preview title='Custom Shell' text="A custom shell written in C that features Finite State Machine design, Make, lexical analysis (tokenization), file redirection, and Pipes. Built within Windows Subsystem for Linux and Visual Studio Code." imagePath={shellPic}  gitLink="https://github.com/jaredt17/CustomShell_C" link="/projects/customShell"/>
-                        <Preview title='Hisser Sharing' text="A twitter clone created using PHP, MySQLi, HTML, Bootstrap, and CSS. Features custom profiles, user feeds, posts, and searching." imagePath={ hisser } gitLink="https://github.com/jaredt17/HisserSharing" />
+                    <Col md="3" sm="6">    
+                        <Preview title='Meritor | SR. IT Project Manager' subtitle="Vision IT" text={nl2br('Managed all aspects of network integrations for corporate acquisitions: Fabco / AA-Gear/ AxleTech / TransPower – in progress. \n\nCreated IS integration run book to facilitate future acquisitions.')} imagePath={meritor} link="/projects/customShell" date="October 2018 - Present" />
+                        <Preview title='DOW Chemical | Network Performance Specialist' subtitle="IBM/AT&T - ICS" text={nl2br("Deployed Cisco network infrastructure across Dow network for VoIP initiative. \n\n3rd level escalation of LAN, WAN, and VPN incidents related to Dow network. \n\nCoordination of numerous U.S. site installations and upgrades")} imagePath={ dow } date="October 2007 - March 2010" />
                     </Col>
 
-                    <Col md="4" sm="6">
-                        <Preview title='Snack Finder' text="A Python (Django) web application for finding local snacks. Features authentication, PostgreSQL, MVC design, and Bootstrap." imagePath={ snackPic } gitLink="https://github.com/jaredt17/foodFinder"/>
-                        <Preview title='Hashing Based Search Engine' text="A custom hashing based search engine built in Java utilizing separate chaining and stacks. Allows user to enter input expressions in Postfix notation to search the document for a corresponding URL." gitLink="https://github.com/jaredt17/HashingBasedSearchEngine" imagePath={hashPicture} />
+                    <Col md="3" sm="6">
+                        <Preview title='Ally Financial | SR. Network Project Manager' subtitle="Tek Systems" text={nl2br('Project lead for Internet Colo relocation / AWS cloud initiative. \n\nDirected network hardware refresh across 11 Ally corporate offices. \n\nCoordinated creation of new network segment to support TradeKing acquisition.')} imagePath={ ally } date="June 2016 - May 2018" />
+                        <Preview title='General Motors | Network Deployment Manager' subtitle="Ajilon" text={nl2br("Directed fiber plant installations and LAN hardware upgrades for several GMNA assembly plants: \nOrion / Bowling Green / Pontiac Assembly / Grand Blanc / Flint & Pontiac Metal Centers / Warren Transmission. \n\nManaged Wifi upgrades and firewall deployments at various GMNA sites")} imagePath={gm} date="January 2005 - October 2007"/>
                     </Col>
 
-                    <Col md="4" sm="6">
-                        <Preview title='This Portfolio Web App!' text="The portfolio you are looking at now was created using React, JavaScript, HTML, CSS, and React Bootstrap. Every project shown is based on a project preview component and the entire project page was added to the home page as a component itself." imagePath={portImage} gitLink="https://github.com/jaredt17/Portfolio" />
-                        <Preview title='My YouTube Channel' text="My YouTube channel has about 650 Subscribers and over 125,000 views! I generally share my custom scripts for video games written in AutoHotkey scripting language." imagePath={ youtubeImage } link="https://www.youtube.com/channel/UCckTB2YocVwWV0jmc929wCw" />
-                        
+                    <Col md="3" sm="6">
+                        <Preview title='General Motors | Network Implementation Manager' subtitle="Tek Systems" text={nl2br("One-year project to inventory Onstar network and assist with transitioning in-house for GM management. \n\nProject lead for Onstar (GCCX) Mexico City call center relocation. \n\nCoordinated hardware upgrade / refresh efforts at several GM sites")} imagePath={gm} date="July 2015 - June 2016"/>
+                    </Col>
+
+                    <Col md="3" sm="6">
+                        <Preview title='IBM | Global Network Transition Manager' subtitle="CDI IT Solutions" text={nl2br("Global network program lead for IBM’s Strategic Outsourcing division. \n\nManaged all facets of transitioning customer IT environments to IBM for steady state support. \n\nPlanning oversight, and execution of network delivery for several accounts: \nElement Fleet / Citigroup / Freddie Mac / Centurylink / Broadridge \nThe Hartford / John Deere / Mead Johnson / BG Group / Sandvik")} imagePath={ibm}  date="March 2010 - June 2015"/>
                     </Col>
                 </Row>
 
