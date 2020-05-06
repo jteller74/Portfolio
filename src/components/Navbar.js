@@ -29,15 +29,15 @@ const NavHeader = (props) => {
     return (
             <div>
                 <Navbar color="dark" dark expand="md">
-                    <NavbarBrand tag={Link} to="/">Jared Teller</NavbarBrand>
+                    <NavbarBrand tag={Link} to="/Portfolio">Jared Teller</NavbarBrand>
                     <NavbarToggler onClick={toggle} />
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="mr-auto" navbar>
                             <NavItem>
-                                <NavLink tag={Link} to="/projects">Projects</NavLink>
+                                <NavLink tag={Link} to="/Portfolio/projects">Projects</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink tag={Link} to="/contact">Contact</NavLink>
+                                <NavLink tag={Link} to="/Portfolio/contact">Contact</NavLink>
                             </NavItem>
                         </Nav>
                         <NavLink style={customLinkStyle} href="https://reactjs.org/">Created with React</NavLink>

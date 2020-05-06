@@ -20,7 +20,7 @@ class Project extends Component {
                 <hr></hr>
                 <Row>
                     <Col md="4" sm="6">    
-                        <Preview title='Custom Shell' text="A custom shell written in C that features Finite State Machine design, Make, lexical analysis (tokenization), file redirection, and Pipes. Built within Windows Subsystem for Linux and Visual Studio Code." imagePath={shellPic}  gitLink="https://github.com/jaredt17/CustomShell_C" link="/projects/customShell"/>
+                        <Preview title='Custom Shell' text="A custom shell written in C that features Finite State Machine design, Make, lexical analysis (tokenization), file redirection, and Pipes. Built within Windows Subsystem for Linux and Visual Studio Code." imagePath={shellPic}  gitLink="https://github.com/jaredt17/CustomShell_C" link="/Portfolio/projects/customShell"/>
                         <Preview title='Hisser Sharing' text="A twitter clone created using PHP, MySQLi, HTML, Bootstrap, and CSS. Features custom profiles, user feeds, posts, and searching." imagePath={ hisser } gitLink="https://github.com/jaredt17/HisserSharing" />
                     </Col>
 
