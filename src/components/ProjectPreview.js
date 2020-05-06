@@ -5,6 +5,7 @@ import {
 } from 'reactstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faYoutubeSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 
 class Preview extends Component { //needs title, subtitle, text, and a link to github if available
@@ -20,7 +21,7 @@ class Preview extends Component { //needs title, subtitle, text, and a link to g
                     
                     <ButtonGroup>
                         {this.props.link != null &&
-                            <Button style={{marginRight: '5px'}} href={this.props.link}>Learn More</Button>
+                            <Button style={{marginRight: '5px'}} tag={Link} to={this.props.link}>Learn More</Button>
                         }
                         
                         { this.props.gitLink != null &&

@@ -15,35 +15,35 @@ class App extends Component {
 	render() {
 
 		return (
-			<Router>
+			<Router basename="/Portfolio">
 				<div style={{backgroundColor: "rgb(46,49,65)"}}>
 					<Navbar />
 
 					<Switch>
 
-						<Route exact path={process.env.PUBLIC_URL + '/'}>
+						<Route exact path="/">
 							<About />
 							<Projects />
 							<Contact />
 							<Footer />
 						</Route>
 
-						<Route path={process.env.PUBLIC_URL + '/about'}>
+						<Route path="/about">
 							<About />
 							<Footer />
 						</Route>
 
-						<Route exact path={process.env.PUBLIC_URL + '/projects'}>
+						<Route exact path="/projects">
 							<Projects />
 							<Footer />
 						</Route>
 
-						<Route path={process.env.PUBLIC_URL + '/contact'}>
+						<Route path="/contact">
 							<Contact />
 							<Footer />
 						</Route>
 
-						<Route path={process.env.PUBLIC_URL + '/projects/customShell'}>
+						<Route path="/projects/customShell">
 							{/*<ShellProj />*/}
 							<ProjectFull title="Custom Shell in C" subtitle="A custom shell written in C for linux" gitLink="https://github.com/jaredt17/CustomShell_C" description="This project is an attempt to create a custom Shell program from scratch that can utilize all of the Linux built in commands. The Shell is to function by running through a Finite State Machine for all of the tokenized user input passed through a lexical analyzer. Git was used for Version Control."/>
 						</Route>
