@@ -18,14 +18,7 @@ class Preview extends Component { //needs title, subtitle, text, and a link to g
                     <CardSubtitle tag="h6" className="text-center">{this.props.subtitle}</CardSubtitle>
                     <hr></hr>
                     <CardText>{this.props.text}</CardText>
-                    
-                    <ButtonGroup>
-                        <Button style={{marginRight: '5px'}} tag={Link} to={this.props.link}>Learn More</Button>
-                
-                        { this.props.gitLink != null &&
-                            <Button href={this.props.gitLink}><FontAwesomeIcon icon={faGithub}/> Github</Button>
-                        }
-                    </ButtonGroup>
+
                 </CardBody>
                 <CardFooter style={{backgroundColor: 'rgb(52,58,64)'}}>
                     { this.props.date }

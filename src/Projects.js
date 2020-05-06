@@ -20,7 +20,7 @@ class Project extends Component {
                 <hr></hr>
                 <Row>
                     <Col md="3" sm="6">    
-                        <Preview title={nl2br('Meritor\nSR. IT Project Manager')} subtitle="Vision IT" text={nl2br('Managed all aspects of network integrations for corporate acquisitions: Fabco / AA-Gear/ AxleTech / TransPower – in progress. \n\nCreated IS integration run book to facilitate future acquisitions.')} imagePath={meritor} link="/projects/customShell" date="October 2018 - Present" />
+                        <Preview title={nl2br('Meritor\nSR. IT Project Manager')} subtitle="Vision IT" text={nl2br('Managed all aspects of network integrations for corporate acquisitions: Fabco / AA-Gear/ AxleTech / TransPower – in progress. \n\nCreated IS integration run book to facilitate future acquisitions.')} imagePath={meritor} date="October 2018 - Present" />
                         <Preview title={nl2br('DOW Chemical\nNetwork Performance Specialist')} subtitle="IBM/AT&T - ICS" text={nl2br("Deployed Cisco network infrastructure across Dow network for VoIP initiative. \n\n3rd level escalation of LAN, WAN, and VPN incidents related to Dow network. \n\nCoordination of numerous U.S. site installations and upgrades")} imagePath={ dow } date="October 2007 - March 2010" />
                     </Col>
 
