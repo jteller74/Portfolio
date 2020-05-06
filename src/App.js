@@ -44,8 +44,8 @@ class App extends Component {
 						</Route>
 
 						<Route path="/projects/customShell">
-							<ShellProj />
-							{/*<ProjectFull title="Custom Shell in C" subtitle="A custom shell written in C for linux" gitLink="https://github.com/jaredt17/CustomShell_C" description="This project is an attempt to create a custom Shell program from scratch that can utilize all of the Linux built in commands. The Shell is to function by running through a Finite State Machine for all of the tokenized user input passed through a lexical analyzer. Git was used for Version Control."/>*/}
+							{/*<ShellProj />*/}
+							<ProjectFull title="Custom Shell in C" subtitle="A custom shell written in C for linux" gitLink="https://github.com/jaredt17/CustomShell_C" description="This project is an attempt to create a custom Shell program from scratch that can utilize all of the Linux built in commands. The Shell is to function by running through a Finite State Machine for all of the tokenized user input passed through a lexical analyzer. Git was used for Version Control."/>
 						</Route>
 					</Switch>
 
