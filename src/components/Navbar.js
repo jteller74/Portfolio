@@ -40,7 +40,7 @@ const NavHeader = (props) => {
                                 <NavLink tag={Link} to="/contact">Contact</NavLink>
                             </NavItem>
                         </Nav>
-                        <NavLink style={customLinkStyle} href="https://reactjs.org/">Created with React</NavLink>
+                    
                     </Collapse>
                 </Navbar>
             </div>

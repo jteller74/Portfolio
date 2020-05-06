@@ -22,22 +22,8 @@ class About extends Component {
                             <Button style={{marginBottom: '10px', marginRight: '5px'}} href={process.env.PUBLIC_URL + '/CV5_20.pdf'}>Detailed CV</Button>
                             <Button style={{marginBottom: '10px', marginRight: '5px'}} href={process.env.PUBLIC_URL + '/jtellerCL_5_20.pdf'}>Cover Letter</Button>
                         </ButtonGroup>
-                       
-                    </Col>
 
-                    <Col md="1">
-                    </Col>
-
-                    <Col md="2">
-                        <Image src={profilePic} fluid></Image>
-                    </Col>    
-                </Row>
-                <br></br>
-                <Row>
-                    
-                    <Col md="8">
-                        
-                        <h5>Education</h5>
+                        <h5 style={{marginTop: '20px'}}>Education</h5>
                         <hr></hr>
                         <p><strong>Western Governors University</strong> has provided me a seamless transition into an online curriculum where I am pursuing a B.S. in Business, Information Technology Management. Here my focuses are on IT management, global business, business strategy and ethics, data management, networking, security, operations and supply chain management, and finance. I am set to graduate in July 2020.</p>
                         <strong>Prior Network Engineering Experience and Certifications:</strong>
@@ -45,12 +31,28 @@ class About extends Component {
                         <li>Cisco Advanced Wireless Field Specialist Certification 2006-2009</li>
                         <li>Training in Cisco LAN switching, PIX firewalls, and Sniffer Pro</li>
                     </Col>
+
+                    <Col md="1">
+                    </Col>
+
+                    <Col md="2">
+                        <Image src={profilePic} fluid rounded></Image>
+                        <Image src={wguLogo} fluid ></Image>
+                    </Col>    
+                </Row>
+                <br></br>
+                <Row>
+                    
+                    <Col md="8">
+                        
+                     
+                    </Col>
                     
                     <Col md="1">
                     </Col>
 
                     <Col md="2">
-                        <Image src={wguLogo} fluid ></Image>
+                      
                     </Col>
                     
                 </Row>
