@@ -15,7 +15,7 @@ class App extends Component {
 	render() {
 
 		return (
-			<Router basename="/Portfolio">
+			<Router basename="/">
 				<div style={{backgroundColor: "rgb(46,49,65)"}}>
 					<Navbar />
 
